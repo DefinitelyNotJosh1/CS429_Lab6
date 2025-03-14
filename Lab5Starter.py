@@ -14,12 +14,14 @@ print(Y)
 C = np.random.choice(np.shape(X)[0], NUM_CENTROIDS)
 print(C)
 
-Distance = np.array()
+Distance = np.zeros((np.shape(X)[0], NUM_CENTROIDS))
 
 epochs = 1
 
 for i in epochs:
-    
+    for j in range(NUM_CENTROIDS):
+        Distance[:,j] = np.sqrt((X-C[j])**2 + (Y-C[j])**2)
+    print(Distance)
 
 
 
