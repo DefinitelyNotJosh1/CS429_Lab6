@@ -1,3 +1,8 @@
+# Author: Joshua Krasnogorov
+# Date: 3/14/2025
+
+# K-Means Clustering
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
